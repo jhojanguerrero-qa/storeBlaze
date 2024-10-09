@@ -1,3 +1,4 @@
+import { buyCelHelpers } from "../page/buy-cell/buy-cell.helpers";
 import { homePageConstans } from "../page/Home-page/home-page.constans";
 import { homePageHelpers } from "../page/Home-page/home-page.helpers";
 import { logInHelpers } from "../page/LogIn/logIn.helpers";
@@ -29,5 +30,11 @@ describe("prueba tecnica", () =>{
         logInHelpers.clicButtomLogIn();
         cy.wait(1000); 
 
+    })
+
+    it.only("compra celular",() =>{
+        buyCelHelpers.clickNameProduct();
+        cy.wait(1500);
+        buyCelHelpers.clickAddCartProduct();
     })
 })
