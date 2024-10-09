@@ -1,6 +1,11 @@
+import { homePageHelpers } from "../page/Home-page/home-page.helpers";
 
 describe("prueba tecnica", () =>{
-    it("registro usuario" , () => {
+    beforeEach(() => {
+       homePageHelpers.visiturl()        
+    });
 
-    })
+    it("registro usuario" , () => {
+        homePageHelpers.clicRegistro()
+    });
 })

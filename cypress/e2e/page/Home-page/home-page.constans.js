@@ -1,5 +1,8 @@
 export class homePageConstans {
     static get url() {
-        return ""
+        return "https://www.demoblaze.com"
+    }
+    static get password(){
+        return "123"
     }
 }
