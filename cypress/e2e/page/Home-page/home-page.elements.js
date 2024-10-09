@@ -4,21 +4,9 @@ export class homePageElements {
              get SignUpOption(){
                 return cy.get('a[data-target="#signInModal"]');
              },
+             get LogInOption(){
+                return cy.get('a[data-target="#logInModal"]');
+             }
         }
     }
-
-    static get SignUpForm(){
-        return{
-            get inputUsername(){
-                return cy.get('input#sign-username');
-            },
-            get inputPassword(){
-                return cy.get('input#sign-password');
-            },
-            get btnFinishSignUp(){
-                return  cy.contains('button', 'Sign up');
-            },
-        }
-    }
-
 }

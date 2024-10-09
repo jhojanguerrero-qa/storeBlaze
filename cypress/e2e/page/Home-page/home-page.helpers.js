@@ -8,4 +8,8 @@ export class homePageHelpers {
     static clickOptionMenuSignUp(){
         homePageElements.mainMenu.SignUpOption.click();
     }
+
+    static clickOptionMenuLogIn(){
+        homePageElements.mainMenu.LogInOption.click();
+    }
 }
