@@ -32,7 +32,7 @@ describe("prueba tecnica", () =>{
 
     })
 
-    it.only("compra celular",() =>{
+    it("compra celular",() =>{
         buyCelHelpers.clickNameProduct();
         cy.wait(1500);
         buyCelHelpers.clickAddCartProduct();
